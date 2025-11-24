@@ -49,7 +49,7 @@ d = {}
 
 print(b.get('이름'))
 print(b['이름'])
-print(b.get('이름2')) # key가 없을 때 None을 돌려주며 에러 없음
+print('!!!', b.get('이름2')) # key가 없을 때 None을 돌려주며 에러 없음
 
 print( b.get('이름', '값없음') )
 print( b.get('이름2', '값없음') )
@@ -58,3 +58,6 @@ print( '이름' in b ) # in은 key가 있는지 여부를 판단
 
 e = b.pop('이름')
 print( e, b )
+
+
+
