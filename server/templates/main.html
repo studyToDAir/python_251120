@@ -8,6 +8,9 @@
 <body>
     메인입니다<br>
     <strong>{{id2}}</strong>님 환영합니다<br>
+    {% if d %}
+        d가 True일때 출력됨<br>
+    {% endif %}
     d['k'] : {{ d['k'] }}<br>
     {{ d }}<br>
     l[0] : {{ l[0] }}<br>
@@ -20,5 +23,7 @@
         {% endif %}
     {% endfor %}
     </ul>
+    <!-- html 주석 : 브라우저까지 간다 -->
+    {# Jinja2 주석 : 밖으로 안나간다 #}
 </body>
 </html>
